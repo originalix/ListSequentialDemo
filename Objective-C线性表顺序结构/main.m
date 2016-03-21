@@ -10,10 +10,10 @@
 #import "List.h"
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        //把1-5按顺序入栈
+        //把1-8按顺序入栈
         SqList * list = initSqList();
 
-        NSLog(@"把1-5按顺序入栈");
+        NSLog(@"把1-8按顺序入栈");
         int j = 1;
         for (int i = 0; i <8  ; i++) {
             pushElement(j, list);
@@ -24,14 +24,14 @@ int main(int argc, const char * argv[]) {
         
         displayList(list);
 
-        //往第三个位置插入724;
+        //往第8个位置插入724;
         
         insertElementWithLocation(724, list, 8);
         
         //按照栈的形式来删除数据
 //        popElement(0, list);
         
-        //把第五位的数据删除
+////        把第五位的数据删除
 //        deleteElementWithLocation(0, 5, list);
         
         displayList(list);
